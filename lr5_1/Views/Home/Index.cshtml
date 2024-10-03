@@ -1,0 +1,17 @@
+﻿@model DateTime
+
+<h2>Збереження даних у Cookies</h2>
+<form asp-action="Index" method="post">
+    <label for="value">Введіть значення:</label>
+    <input type="text" id="value" name="value" required />
+
+    <label for="expiryDate">Дата і час закінчення терміну дії Cookies:</label>
+    <input type="datetime-local" id="expiryDate" name="expiryDate" required />
+
+    <button type="submit">Зберегти в Cookies</button>
+</form>
+
+<h2>Тестування виключення</h2>
+<form asp-action="ThrowException" method="post">
+    <button type="submit">Викликати виключення</button>
+</form>
